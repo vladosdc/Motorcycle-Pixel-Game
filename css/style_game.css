@@ -1,0 +1,334 @@
+@font-face {
+    font-family: "Pixel_Font";
+    src: url("../fonts/Pixel_font.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    touch-action: manipulation;
+}
+
+.game{
+    width: 800px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+.Message_deviceNotSupport{
+    display: none;
+}
+.jumpBtn_block {
+    display: none;
+}
+.home_pageBtn{
+    display: none;
+}
+.homePage_deviceNotSupport{
+    display: none;
+}
+.motorcycle {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/Motorcycle.gif);
+    background-size: 200px 200px;
+    position: relative;
+    top: 73px;
+}
+.motorcycle_stop {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/Motorcycle_stop.png);
+    background-size: 200px 200px;
+    position: relative;
+    top: 73px;
+}
+
+.obstacles{
+    width: 40px;
+    height: 45px;
+    background-size: 40px 45px;
+    position: relative;
+    bottom: 45px;
+    left: 750px;
+}
+
+.obstacles_1 {
+    width: 40px;
+    height: 45px;
+    background-image: url(../img/Cactus_object.png);
+    background-size: 40px 45px;
+    position: relative;
+    bottom: 45px;
+    left: 750px;
+    animation: obstaclesAnimation 1.3s infinite linear;
+}
+.obstacles_2 {
+    width: 78px;
+    height: 54px;
+    background-image: url(../img/Cactus2_object.png);
+    background-size: 78px 54px;
+    position: relative;
+    bottom: 50px;
+    left: 750px;
+    animation: obstaclesAnimation 1.3s infinite linear;
+}
+.obstacles_3 {
+    width: 75px;
+    height: 40px;
+    background-image: url(../img/Car_object.png);
+    background-size: 75px 40px;
+    position: relative;
+    bottom: 40px;
+    left: 750px;
+    animation: obstaclesAnimation 1.3s infinite linear;
+}
+.obstacles_4 {
+    width: 60px;
+    height: 45px;
+    background-image: url(../img/crystal_object.png);
+    background-size: 60px 45px;
+    position: relative;
+    bottom: 40px;
+    left: 750px;
+    animation: obstaclesAnimation 1.3s infinite linear;
+}
+.obstacles_5 {
+    width: 55px;
+    height: 50px;
+    background-image: url(../img/trashСan_object.png);
+    background-size: 55px 50px;
+    position: relative;
+    bottom: 43px;
+    left: 750px;
+    animation: obstaclesAnimation 1.3s infinite linear;
+}
+.obstacles_6 {
+    width: 55px;
+    height: 45px;
+    background-image: url(../img/fireTrashСan_object.png);
+    background-size: 55px 45px;
+    position: relative;
+    bottom: 45px;
+    left: 750px;
+    animation: obstaclesAnimation 1.3s infinite linear;
+}
+.obstacles_7 {
+    width: 50px;
+    height: 40px;
+    background-image: url(../img/bitcoin_object.png);
+    background-size: 50px 40px;
+    position: relative;
+    bottom: 40px;
+    left: 750px;
+    animation: obstaclesAnimation 1.3s infinite linear;
+}
+@keyframes obstaclesAnimation {
+    0% {
+        left: 750px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+
+
+.jump {
+    animation: jump 0.3s ease-in-out;
+    top: -100px;
+}
+
+@keyframes jump {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: -105px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.score_block{
+    font-family: Pixel_Font, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.score{
+    padding-left: 5px;
+}
+
+.game_over{
+    display: none;
+}
+.gameOver_text{
+    font-family: Pixel_Font, sans-serif;
+}
+.EndBlock{
+    display: none;
+}
+.Game_Over{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.RestartGame{
+    font-family: Pixel_Font, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.RestartGame {
+    width: 90px;
+    height: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    background-color: rgba(230,0,35,1);
+    background-position: 100% 0;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 4px 10px 0 rgba(0, 40, 120, .35);
+    transition: .5s;
+    border: 0px;
+}
+.RestartGame:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+
+
+
+.HomePage_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Home_link{
+text-decoration: none;
+    color: white;
+
+
+}
+
+.Home_btn {
+    font-family: Pixel_Font, sans-serif;
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    background-color: rgb(255,127,80, 1);
+    background-position: 100% 0;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 1px 7px 0 rgba(0, 40, 120, .35);
+    transition: .5s;
+    border: 0px;
+}
+.Home_btn:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+
+
+/*Adaptive*/
+
+@media only screen and (max-width: 1000px) {
+.jumpBtn_block{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+}
+
+    .jump_btn {
+        font-family: Pixel_Font, sans-serif;
+        width: 120px;
+        height: 50px;
+        text-decoration: none;
+        display: inline-block;
+
+        margin-top: 15px;
+        margin-bottom: 5px;
+        border-radius: 30px;
+        background-color: rgb(72,72,72, 1.0);
+        background-position: 100% 0;
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        transition: .5s;
+        border: 0px;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    body * {
+        display: none;
+    }
+    .Message_deviceNotSupport{
+        font-family: Pixel_Font, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+        font-size: 16px;
+        color: red;
+        text-align: center;
+        font-weight: bold;
+
+    }
+    .jumpBtn_block{
+        display: none;
+    }
+    .homePage_deviceNotSupport{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home_pageBtn{
+        display: flex;
+    }
+    .HomePageBtn_link{
+        display: flex;
+        text-decoration: none;
+    }
+
+    .home_pageBtn {
+        font-family: Pixel_Font, sans-serif;
+        width: 120px;
+        height: 40px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 40px;
+        border-radius: 30px;
+        background-color: rgb(255,127,80, 1);
+        background-position: 100% 0;
+        font-size: 18px;
+        color: white;
+        box-shadow: 0 1px 7px 0 rgba(0, 40, 120, .35);
+        transition: .5s;
+        border: 0px;
+    }
+    .home_pageBtn:hover {
+        box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+        background-position: 0 0;
+    }
+
+}

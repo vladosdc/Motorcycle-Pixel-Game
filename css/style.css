@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Pixel_Font";
+    src: url("../fonts/Pixel_font.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Cyrillic_Font";
+    src: url("../fonts/Cyrillic_Font.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.wrapper{}
+
+.Main_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+body{
+    background: url("../img/Background_MainPage.gif") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    touch-action: manipulation;
+}
+.Title{
+    font-family: Pixel_Font, sans-serif;
+    padding-top: 40px;
+    font-size: 45px;
+    height: 0px;
+}
+.version_text{
+    font-family: Pixel_Font, sans-serif;
+    font-size: 14px;
+    padding-top: 20px;
+    opacity: 0.4;
+}
+.About_game{
+    font-family: Pixel_Font, sans-serif;
+    font-size: 25px;
+}
+.select_language{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.text_selectLanguage{
+    font-family: Pixel_Font, sans-serif;
+    font-size: 18px;
+}
+#select_language{
+    font-family: Pixel_Font, sans-serif;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 18px;
+    height: 25px;
+}
+.Eng{
+    font-family: Pixel_Font, sans-serif;
+    font-size: 19px;
+    max-width: 700px;
+}
+.Eng_Hidden{
+    display: none;
+}
+.Ukr{
+    display: none;
+}
+.Ru{
+    display: none;
+}
+.UkrainianText_select{
+    font-family: Cyrillic_Font, sans-serif;
+    font-size: 18px;
+    max-width: 700px;
+}
+.RussianText_select{
+    font-family: Cyrillic_Font, sans-serif;
+    font-size: 18px;
+    max-width: 700px;
+}
+
+
+
+
+.Play_Game {
+    font-family: Pixel_Font, sans-serif;
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    display: inline-block;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    background-color: rgba(7, 235, 247, 1.0);
+    background-position: 100% 0;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 10px 7px 0 rgba(0, 40, 120, .35);
+    transition: .5s;
+    border: 0px;
+}
+.Play_Game:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+.game_html{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*Adaptive*/
+
+
+
+@media only screen and (max-width: 545px) {
+    .Title{
+        font-size: 35px;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .Title{
+        font-size: 29px;
+    }
+}
+@media only screen and (max-width: 356px) {
+    .Title{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 305px) {
+    .Title{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 255px) {
+    .Title{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 213px) {
+    .Title{
+        font-size: 12px;
+    }
+}
