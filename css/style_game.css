@@ -183,6 +183,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 
@@ -239,6 +240,7 @@ text-decoration: none;
     box-shadow: 0 1px 7px 0 rgba(0, 40, 120, .35);
     transition: .5s;
     border: 0px;
+    cursor: pointer;
 }
 .Home_btn:hover {
     box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
